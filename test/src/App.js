@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import { Player } from 'video-react'
+import React from 'react'
 import './App.css';
+
+import "../node_modules/video-react/dist/video-react.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div className="App-header">
+        <Player
+          src = "https://funtube-1259626356.cos.ap-shanghai.myqcloud.com/video/video03_diaosi_ep03.mp4"
         >
-          Learn React
-        </a>
-      </header>
+          
+        </Player>
+      </div>
     </div>
   );
 }
